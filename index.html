@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>PokéGeraldo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <h1>PokéGeraldo</h1>
+  <div id="characterSelect">
+    <p>Elige tu protagonista</p>
+    <button onclick="choose('Geraldo')">👦 Geraldo</button>
+    <button onclick="choose('Lady')">👧 Lady</button>
+  </div>
+
+  <canvas id="game" width="480" height="320"></canvas>
+  <div id="story">Elige un protagonista para comenzar.</div>
+
+  <div id="controls">
+    <div></div><button data-dir="up">▲</button><div></div>
+    <button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button>
+  </div>
+  <button id="action">A / Interactuar</button>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
